@@ -1,0 +1,9 @@
+{
+    "env": "prod",
+    "dev":{
+        "url":""
+    },
+    "prod":{
+        "url":"https://www.aljazeera.com"
+    }
+}
