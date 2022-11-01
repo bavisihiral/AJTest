@@ -11,3 +11,7 @@ Run the below command to run scenarios all Most Read section scenarios
     npx codeceptjs run --grep "@most_read_section"
 To Open Allure report, run the below command
     allure serve output
+
+Conifgurations:
+
+1. To change the environment, please update "env" in env_config.json
