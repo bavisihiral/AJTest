@@ -1,3 +1,3 @@
 #!/bin/bash
-npm run codeceptjs
+npm run codeceptjs 
 allure serve output
