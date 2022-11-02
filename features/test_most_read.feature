@@ -12,7 +12,7 @@ Feature: Al Jazeera Most Read Tests
     
   Scenario: On Desktop make sure the "Most Read" section has 10 posts
     Given I am on Aljazeera website
-    Then Most Read Section should have '10' posts
+    Then Most Read Section should have 10 posts
   
   Scenario: on Mobile make sure that the "Most Read" section is not appearing
     Given I am on Aljazeera website from mobile
