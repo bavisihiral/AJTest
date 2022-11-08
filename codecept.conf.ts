@@ -5,11 +5,14 @@ exports.config = {
     WebDriver: {
       url: ' https://aljazeera.com/',
       browser: 'chrome'
+    },
+    MyHelper3:{
+      require:"./myhelper3_helper.ts"
     }
   },
  
   require: ["ts-node/register"],
-  name: 'ajljeerademo',
+  name: 'aljazeerademo',
   plugins: {
     wdio: {
       enabled: true,
@@ -21,13 +24,9 @@ exports.config = {
   },
   gherkin: {
     features: "./features/*.feature",
-    steps: [
-      "./step_definitions/most_read_steps.ts",
-      "./step_definitions/live_video_player_steps.ts"
-    ]
+    steps: "./step_definitions/*.ts",
   },
   include: {
     homepagePage: "./pages/homepage.ts"
-  }
-
+  },
 }

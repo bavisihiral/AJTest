@@ -1,7 +1,5 @@
 @most_read_section
 Feature: Al Jazeera Most Read Tests
-  In order to verify that most read section is working fine
-  I need to run all the tests
 
 # Background:
 #   Given I am on Aljazeera website
@@ -24,8 +22,3 @@ Feature: Al Jazeera Most Read Tests
     And I press 'Tab' key
     And I click on Skip most Read
     Then I am on the URL '/#most-read-container'
-  
-  
-
-
-    

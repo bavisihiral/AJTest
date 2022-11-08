@@ -10,7 +10,9 @@
     "strictNullChecks": false,
     "types": ["codeceptjs", "node"],
     "declaration": true,
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "outDir": "tscompiledfiles",
+    "sourceMap": true
   },
   "exclude": ["node_modules"]
 }

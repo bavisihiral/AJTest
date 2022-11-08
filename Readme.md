@@ -33,3 +33,5 @@ To Open Allure report, run the below command
 ## Conifguration:
 
 1. To change the environment, please update "env" in env_config.json
+2. To pass the url from enviornment variable, please set url as env variable before executing the code. Example:
+    url="https://dev.aljazeera.com" npm run codeceptjs

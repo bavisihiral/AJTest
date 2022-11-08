@@ -1,3 +1,5 @@
+import assert, { doesNotMatch } from "assert";
+
 const { I } = inject();
 export = {
 
@@ -5,10 +7,21 @@ export = {
     videoStream: "//video[contains(@class,'video-stream')]",
 
   switchToVideoPlayerIframe(){
-    I.switchTo(this.videoplayeriframe)
+    I.switchTo(this.videoplayeriframe);
   },
 
   isVideoPlayerVisible(){
+    //  I.grabNumberOfVisibleElements(this.videoStream).then((valueOfElement)=>{
+    //   console.log("NUMBER OF ELEMENTSSSSS" + valueOfElement.valueOf())
+    //   assert.equal(valueOfElement.valueOf(),2,"Video player is not visible")
+    //  }).catch(function(){
+    //   console.log("Video player is not visible inside catch")
+      
+    // //  })
+    // let s = locate("abc").first()
+    // s.find(asdf)
+    // // I.seeNumberOfElements
+    // I.clickOnEveryElement()
     I.seeElement(this.videoStream)
   }
 }
