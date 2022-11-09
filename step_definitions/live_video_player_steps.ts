@@ -9,7 +9,6 @@ Given('I am on Aljazeera Live Page', () => {
 
 Then("I should see live video player",()=>{
     livepage.switchToVideoPlayerIframe();
-    pause()
     livepage.isVideoPlayerVisible()
     console.log("GLOBAL VARIALBE IS:"+globalThis.myname)
 })
